@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+*
+ {
+  box-sizing: border-box;
+  font-family: 'RocknRoll One',
+  sans-serif;
+}
+
+body {
+ margin: 0;
+ min-height: 70vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+h2{
+  height: 30px;
+  width: 100%;
+  font-size: 2rem;
+}
+
+/* display flex here helps us to position our num and ops container using 75% and 25% display in the calculator container. we could also use grid*/
+.calculator{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 350px;
+  background-color: #000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  
+}
+
+.display{
+  text-align: right;
+  width: 100%;
+  font-size: 2rem;
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+small{
+  text-align: right;
+  width: 100%;
+  height: 30px;
+  background-color: #1c1c1c;
+  color: #ff9500;
+padding: 0.5rem;
+letter-spacing: 0.15rem;
+}
+
+.btns {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  margin: 5px;
+  font-size: 1.3rem;
+  border: none;
+  color: #fff;
+}
+
+.btns:hover{
+  color:#000;
+  border: 2px solid #fff;
+}
+
+.btns:active{
+  transform: scale(0.95);
+}
+.big-btn {
+  height: 55px;
+  width: 120px !important;
+  border-radius: 50px !important;
+ 
+}
+
+ .orange{
+   background-color: #ff9500;
+}
+
+.light-gray {
+  background-color:#505050;
+}
+
+.dark-gray {
+  background-color: #1c1c1c;
+}
+
+.nums-container{
+width: 75%;
+}
+
+.ops-container {
+  width: 25%;
+}
+
+/* clear and leave only the ac on top */
+/* .ac{
+  /* margin-right: 50% !important; */
+
+
+.footer{
+  margin-top: 1.5rem;
+}
+
